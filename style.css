@@ -70,7 +70,7 @@
 .card-content {
   display: flex;
   text-align: justify;
-  z-index: -1;
+  z-index: 999;
   flex-wrap: wrap;
   padding: 10px;
   margin-bottom: 30px;
@@ -112,6 +112,8 @@ body {
   font-family: 'Oxygen', sans-serif;
   position: relative;
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 p {
@@ -127,7 +129,7 @@ h2 {
 }
 
 .card {
-  z-index: -1;
+  z-index: 999;
   background: #ffffff;
   width: 420px;
   margin-top: 60px;
@@ -223,7 +225,7 @@ h2 {
   font-family: cooper black;
 }
 .papan {
-  z-index: -1;
+  z-index: 999;
   background: #ffffff;
   width: 420px;
   margin-top: 60px;
@@ -265,7 +267,7 @@ font-size: 30px;
   margin-top: 50px;
 }
 .papan_materi {
-   z-index: -1;
+   z-index: 999;
   background: #ffffff;
   width: 1000px;
   margin-top: 60px;
