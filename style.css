@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600,700&display=swap');
 *{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
+  margin           : 0;
+  padding          : 0;
+  font-family      : "montserrat",sans-serif;
 }
+
 .header{
-  height: 80px;
-  background: #05a359;
-  padding: 0 20px;
-  color: #fff;
-  box-shadow: 0px 1px 10px #999;
+  height          : 80px;
+  background      : #05a359;
+  padding         : 0 20px;
+  color           : #fff;
+  box-shadow      : 0px 1px 10px #999;
 }
+
 .logo{
   line-height: 80px;
   float: left;
@@ -48,6 +50,7 @@
   color: #29f797;
 }
 
+
 #chk{
   position: absolute;
   visibility: hidden;
@@ -62,6 +65,7 @@
   max-width: 700px;
   margin: 20px 0;
 }
+
 
 .card-content {
   display: flex;
@@ -201,4 +205,346 @@ h2 {
   background: #ffffff;
   color: #05a359;
   border: 1px solid #05a359 ;
+
+}
+.font_tentang p{
+  font-size: 30px;
+  color: #ff91b8;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+.font_tentang h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #7179c6;
+  text-align: center;
+  font-family: cooper black;
+}
+.papan {
+  z-index: -1;
+  background: #ffffff;
+  width: 420px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  box-shadow: -3px 26px 25px -24px #D0DDF5;
+  border-radius: 1rem;
+  position: relative;
+}
+.font_kontak h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #7179c6;
+  text-align: center;
+  font-family: cooper black;
+  margin-top: 30px;
+}
+.kontak img{
+   margin-top: 60px;
+   height: 70px;
+}
+.kontak h1{
+ font-family: cooper black;
+ color: #009933;
+ font-size: 20px;
+}
+.kontak p{
+  font-family: times new roman;
+  color: #000000;
+  font-size: 15px;
+}
+.font_materi h1{
+font-size: 30px;
+  font-weight: 700;
+  color: #7179c6;
+  text-align: center;
+  font-family: cooper black;
+  margin-top: 50px;
+}
+.papan_materi {
+   z-index: -1;
+  background: #ffffff;
+  width: 1000px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  box-shadow: -3px 26px 25px -24px #D0DDF5;
+  border-radius: 1rem;
+  position: relative;
+  font-family: time new roman;
+  text-align: justify;
+
+}
+.materi--body {
+  padding: 2.5rem;
+}
+.materi--body p:last-child {
+  margin-bottom: 0px;
+}
+
+@import "compass/css3";
+
+$body-bg: #c1bdba;
+$form-bg: #13232f;
+$white: #ffffff;
+
+$main: #1ab188;
+$main-light: lighten($main,5%);
+$main-dark: darken($main,5%);
+
+$gray-light: #a0b3b0;
+$gray: #ddd;
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll; 
+}
+
+body {
+  background:$body-bg;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration:none;
+  color:$main;
+  transition:.5s ease;
+  &:hover {
+    color:$main-dark;
+  }
+}
+
+.form {
+  background:rgba($form-bg,.9);
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:$br;
+  box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba($gray-light,.25);
+    color:$gray-light;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    &:hover {
+      background:$main-dark;
+      color:$white;
+    }
+  }
+  .active a {
+    background:$main;
+    color:$white;
+  }
+}
+
+.tab-content > div:last-child {
+  display:none;
+}
+
+
+h1 {
+  text-align:center;
+  color:$white;
+  font-weight:$thin;
+  margin:0 0 40px;
+}
+
+label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color:rgba($white,.5);
+  transition:all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size:22px;
+  .req {
+    margin:2px;
+    color:$main;
+  }
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
+}
+
+label.highlight {
+  color:$white;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid $gray-light;
+  color:$white;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &:focus {
+    outline:0;
+    border-color:$main;
+  }
+}
+
+textarea {
+  border:2px solid $gray-light;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:$bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:$main;
+  color:$white;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+  &:hover, &:focus {
+    background:$main-dark;
+  }
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
 }

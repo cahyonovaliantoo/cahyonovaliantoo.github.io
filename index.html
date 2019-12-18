@@ -19,14 +19,37 @@
       </label>
 
       <ul class="menu">
-        <a href="#">Beranda</a>
-        <a href="#">Tentang</a>
-        <a href="#">Materi</a>
-        <a href="#">Kontak</a>
+        <a href="index.html">Beranda</a>
+        <a id="modalBtn">Login</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="materi.html">Materi</a>
+        <a href="kontak.html">Kontak</a>
         <label for="chk" class="hide-menu-btn">
           <i class="fas fa-times"></i>
         </label>
       </ul>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Login</h2>
+        </div>
+        <div class="modal-body">
+          <div class="form"> 
+            <div class="field-wrap">
+              <input id="username" type="text"required placeholder="Username" />
+            </div>
+              
+            <div class="field-wrap">
+             <input id="password" type="password"required placeholder="Password" />
+            </div>
+            <button onclick="login()" class="button button-block"/>Log In</button>
+          </div>
+          
+        </div>
+      </div>
     </div>
 
     <div class="content">
@@ -47,51 +70,52 @@
           <div class="card--body">
             <h2>Belajar Cara Berwudu yang Benar</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              tempora blanditiis provident nesciunt eos similique?
+              Setiap Muslim harus tahu tata cara wudhu sebagai salah satu syarat agar sholat atau ibadahnya dianggap sah dan diterima Allah SWT. 
             </p>
+            
             <button class="readmore">Baca Selengkapnya</button>
           </div>
         </div>
-        <!--Artikel 2-->
+<!--Artikel 2-->
         <div class="card">
           <div class="card--banderole">
             <div class="card--banderole--title">
               <span class="card--banderole--title-text">
-                Aqidah & Akhlak
+                Aqidah dan Akhlak
               </span>
             </div>
           </div>
 
           <div class="card--body">
-            <h2>Tata Cara Berbicara kepada Orang Tua</h2>
+            <h2>Adab Terhadap Orangtua</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              tempora blanditiis provident nesciunt eos similique?
+              Setiap anak wajib hukumnya berbakti kepada kedua orangtua . hal ini sesuai dengan perintah baik yang ada di dalam Al Quran maupun Hadits.Setiap anak wajib hukumnya berbakti kepada kedua orangtua. 
             </p>
             <button class="readmore">Baca Selengkapnya</button>
           </div>
         </div>
-        <!--Artikel 3-->
+<!--Artikel 3-->
         <div class="card">
             <div class="card--banderole">
               <div class="card--banderole--title">
                 <span class="card--banderole--title-text">
-                  Bahasa Arab
+                  Biography
                 </span>
               </div>
             </div>
   
             <div class="card--body">
-              <h2>Berlatih Membaca Do'a</h2>
+              <h2>Ahli Astronomi Muslim(Ulugh Beigh)</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                tempora blanditiis provident nesciunt eos similique?
+                Ulugh Beigh adalah cucu Timur Leng, orang memanggilnya sebagai penakluk Asia. Dia dibesarkan olehnya ayahnya untuk menjadi raja di Samarkand, Uzbekistan. Minatnya terhadap sains membuat dia peduli dengan perkembangan sains saat itu.
               </p>
               <button class="readmore">Baca Selengkapnya</button>
+            </div>  
             </div>
-          </div>
       </div>
     </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="javascript.js"></script>
   </body>
 </html>
