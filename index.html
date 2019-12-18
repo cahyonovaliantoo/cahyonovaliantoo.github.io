@@ -123,39 +123,15 @@
   <script src="javascript.js"></script>
   <script>
     $("#selanjutnya").click(function () {
-      var url = "artikel.json"
       $.ajax({
-        url: url,
-        type: 'GET',
-        dataType: 'json'
-      })
-        .done(function (artikel) {
-          console.log("sukses");
-          var data = "";
-          $.each(artikel, function (value) {
-            data += `
-                  <div class="card">
-          <div class="card--banderole">
-            <div class="card--banderole--title">
-              <span class="card--banderole--title-text">
-               `+value.tag+`
-              </span>
-            </div>
-          </div>
-
-          <div class="card--body">
-            <h2>`+value.judul+`</h2>
-            <p> `+value.deskripsi+`
-            </p>
-            <button class="readmore">Baca Selengkapnya</button>
-          </div>
-        </div>
-                  `;
-          });
-          $("#konten").append(data);
-        })
-        .fail(function () {
-          console.log("error");
+            url: "https://cahyonovaliantoo.github.io/artikel.json",
+            dataType: "json",
+            success: function(data){
+                $(data.courses).each(function(index,value){
+                    var record = "<tr><td>"+(index+1)+"</td><td>"+value.name+"</td><td>"+value.price+"</td><td>"+value.member+"</td><td>"+value.created_at+"</td><td>"+value.updated_at+"</td></tr>";
+                    $("#kursus").append(record);
+                });
+            }
         })
     });
   </script>

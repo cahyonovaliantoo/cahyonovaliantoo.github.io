@@ -1,4 +1,5 @@
-[
+{
+    "artikel" : [
     {
         "tag" : "Biography",
         "judul"  : "Keluarga Banu Musa Dan Peranan Mereka dalam Matematika",
@@ -15,3 +16,4 @@
         "deskripsi": "Nama lengkap Ibnu Batutah adalah Abu Abdullah Muhammad bin Abdullah bin Muhammad bin Ibrahim al-Lawati. Beliau lahir di Tangier Maroko pada 24 Februari 723 H (1304 M)."
     }
 ]
+}
